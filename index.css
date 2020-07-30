@@ -2,7 +2,16 @@
     color:#97c93e !important;
 }
 
+/* estilo a la imagen ppal // img dentro de carousel */
+#main .carousel-inner img {
+    max-height: 80vh; /* 70% del alto de la pantalla */
+    object-fit: cover;
 
+    filter:grayscale(70%);
+
+
+    
+}
 
 /* colro de fondo */
 #footer{
