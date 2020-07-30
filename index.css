@@ -1,7 +1,19 @@
+.text-platzi{
+    color:#97c93e !important;
+}
+
+
+
+/* colro de fondo */
 #footer{
     background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
 }
 
+/* colro enlaces  */
 #footer a{ 
     color:white;
+}
+
+#header img{
+    width: 80px;
 }
