@@ -2,27 +2,46 @@
     color:#97c93e !important;
 }
 
+#header img{
+    width: 80px;
+}
+
 /* estilo a la imagen ppal // img dentro de carousel */
 #main .carousel-inner img {
     max-height: 80vh; /* 70% del alto de la pantalla */
     object-fit: cover;
-
-    filter:grayscale(70%);
-
-
-    
+    filter: grayscale(70%);/* aplica a las imagenes ??? */
 }
 
-/* colro de fondo */
+/* carousel */
+#carousel {
+    position: relative; 
+}
+ 
+#carousel .overlay {
+    position: absolute;/* para que el oberlay se expanda de todo el alto y ancho del carousel */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+    height: 100%;
+
+}
+
+
+/* color de fondo */
 #footer{
     background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
 }
 
-/* colro enlaces  */
+/* color enlaces  */
 #footer a{ 
     color:white;
 }
 
-#header img{
-    width: 80px;
-}

@@ -11,7 +11,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="index.css">
-    <title>Hello, world!</title>
+    <title>Platzi Conf Hawaii</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
 
 
                 <a class="navbar-brand" href="#">
-                    <img src="/tools/platzi-logo.png" alt="PLatzi">
+                    <img src="tools/platzi-logo.png" alt="Platzi">
                     Conf Hawai
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -84,8 +84,11 @@
 
     <!--MAIN  -->
     <main id="main">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false"><!-- se agrega data-pause: false = evita la pausa al quitar el cursor de la imagen
+        <!-- se cambio el id por el de carousel -->
+        <!-- se agrega data-pause: false = evita la pausa al quitar el cursor de la imagen
          -->
+        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./tools/hawaii.jpg" class="d-block w-100" alt="Hawaii 1">
@@ -96,6 +99,35 @@
                 <div class="carousel-item">
                     <img src="./tools/hawaii3.jpeg" class="d-block w-100" alt="hawaii 3">
                 </div>
+
+                <!-- nuevo para overlay??? -->
+                <div class="overlay">
+                    <!-- se agrego  -->
+                    <div class="container">
+                        <!-- clase container// para que todo el contenido este dentro de una grilla centrada y alineada al resto del contenido  -->
+                        <div class="row align-items-center">
+                            <!-- align-items-center -->
+                            <div class="col-md-6 offset-md-6 text-center text-md-right">
+                                <!-- md-6 = apartir de dispositivos medianos ocupa 6 columnas -->
+                                <!-- la clase "offset-md-6 desplaza el contenedor al otro extremo" -->
+                                <h1>Platzi Conf Hawaii</h1>
+                                <!-- d-none= display none// d-md-blodck = display blockapartir de dispositivos medianos  -->
+                                <p class="d-none d-md-block">PLatzi cong llega por primera vez a hhawaii! Un evento
+                                    para
+                                    compartir con nuestra comunidad el conocimiento y experiencia
+                                    de los expertos que están creando el futuro de internet.
+                                    Ven a conocer a miembros del Team Platzi, a otros estudiantes
+                                    de plati y a los oradores de primer nivel que tenemos para ti.
+                                    Te esperamos!
+                                </p>
+                                <a href="">Quiero ser orador</a>
+                                <button type="button">Comprar tickets</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
             <!-- Controles de carousel // pasar de imagen  -->
