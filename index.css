@@ -50,7 +50,15 @@
     object-fit: cover;
 }
     
+/* LUGAR Y FECHA */
+#place-time img { 
+    max-width: 100%;
+}
 
+#place-time{
+    background-color:#343a40;
+    color:white;
+}
 
 
 
