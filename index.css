@@ -35,6 +35,8 @@
     right: 0;
     background-color: rgba(0,0,0,0.5);
     color:white;
+    /* Soluciona el problema del texto , para que se vea delante de los demas div */
+    z-index: 1;
 }
 
 #carousel .overlay .container,
