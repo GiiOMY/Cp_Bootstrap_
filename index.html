@@ -14,12 +14,19 @@
     <title>Platzi Conf Hawaii</title>
 </head>
 
-<body>
+
+<!-- data-spy="scroll" = sirve para seguir en que seccion de la pagina esta  -->
+<!-- data-target="#navbar" = siempre debe apuntar a una barra de navegacion NAV para realizar el seguimiento  -->
+<!-- resalta en e navbar la seccion que se este visitando de la pagina web -->
+<!-- se agrega data-offseet -->
+<body data-spy="scroll" data-target="#navbar" data-offset="56.52">
 
     <!-- Header -->
     <header>
         <!-- modificar la palabra dark por light en la clase cambia el estilo  -->
-        <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- sticky-top = hace que la barra este en toda la pagina  -->
+        <!-- fixed-top = vesrion actual de bootstrap 4 para hacer sticky -->
+        <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
             <!-- se agrega este contenedor para centrar mas el nav -->
             <div class="container">
@@ -35,20 +42,20 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbar" >
                     <ul class="navbar-nav ml-auto">
                         <!-- ml-auto = margin-left = auto // ajuste automatico a la izquierda y ubica el submenu a la derecha -->
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">La conferencia</a>
+                        <li class="nav-item"><!-- se quita active para que no resale la seccion de la navbar -->
+                            <a class="nav-link" href="#main">La conferencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Los oradores</a>
+                            <a class="nav-link" href="#speakers">Los oradores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Lugar y fecha</a>
+                            <a class="nav-link" href="#place-time">Lugar y fecha</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Conviertete en orador</a>
+                            <a class="nav-link" href="#conviertete-en-orador">Conviertete en orador</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-platzi" href="#">Comprar tickets</a><!--  -->
@@ -251,7 +258,7 @@
     <!-- /LUGAR Y FECHA  -->
 
     <!-- CONVIÉRTETE ENN ORADOR -->
-    <section id="convierte-en-orador" class="pt-3 pb-3">
+    <section id="conviertete-en-orador" class="pt-3 pb-3">
         <div class="container">
             <div class="row">
                 <div class="col text-uppercase text-center">
