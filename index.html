@@ -19,6 +19,7 @@
 <!-- data-target="#navbar" = siempre debe apuntar a una barra de navegacion NAV para realizar el seguimiento  -->
 <!-- resalta en e navbar la seccion que se este visitando de la pagina web -->
 <!-- se agrega data-offseet -->
+
 <body data-spy="scroll" data-target="#navbar" data-offset="56.52">
 
     <!-- Header -->
@@ -42,10 +43,11 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbar" >
+                <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav ml-auto">
                         <!-- ml-auto = margin-left = auto // ajuste automatico a la izquierda y ubica el submenu a la derecha -->
-                        <li class="nav-item"><!-- se quita active para que no resale la seccion de la navbar -->
+                        <li class="nav-item">
+                            <!-- se quita active para que no resale la seccion de la navbar -->
                             <a class="nav-link" href="#main">La conferencia</a>
                         </li>
                         <li class="nav-item">
@@ -57,8 +59,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#conviertete-en-orador">Conviertete en orador</a>
                         </li>
+                        <!-- data-target="#modal-compra" == para enlazar con el modal con el boton-->
+                        <!-- data-toogle="modal" == para indicar que es un modal  -->
                         <li class="nav-item">
-                            <a class="nav-link text-platzi" href="#">Comprar tickets</a><!--  -->
+                            <a class="nav-link text-platzi" href="#" data-toggle="modal"
+                                data-target="#modal-compra">Comprar tickets</a>
                         </li>
 
                         <!-- Dropdown -->
@@ -128,7 +133,9 @@
                                     Te esperamos!
                                 </p>
                                 <a href="" class="btn btn-outline-light">Quiero ser orador</a>
-                                <button type="button" class="btn btn-platzi">Comprar tickets</button>
+                                <!-- se agrega data-toogle y datatarget para enlazar con el modal  -->
+                                <button type="button" class="btn btn-platzi" data-toogle="modal"
+                                    data-target="#modal-compra">Comprar tickets</button>
                             </div>
                         </div>
                     </div>
@@ -271,7 +278,8 @@
             <!-- data-toggle="tooltip" data-placement="top" == clase para indicar la posicion del tooltip -->
             <div class="row">
                 <div class="col text-center">
-                    Anótate como orador para dar una <abbr data-toggle="tooltip" data-placement="top" title="Charlas en 5 minuos">charla ignite</abbr>.
+                    Anótate como orador para dar una <abbr data-toggle="tooltip" data-placement="top"
+                        title="Charlas en 5 minuos">charla ignite</abbr>.
                     Cuéntanos de qué quieres hablar!
                 </div>
             </div>
@@ -350,6 +358,55 @@
     </footer>
     <!-- /footer -->
 
+    <!-- MODAL -->
+    <!-- Se recomienda poner lo modal fuera de cualquier elemento/ a nivel del body es ok  -->
+    <div class="modal fade" id="modal-compra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        data-backdrop="static" data-keyboard="false" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Comprar tickets</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <!-- formulario con filas y columnas -->
+                        <div class="form-row">
+                            <!-- ocupa todo el ancho de la fila  -->
+                            <div class="form-group col">
+
+                                <!-- form de bootstrap -->
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- mensaje de alerta por giio -->
+                    <div class="alert alert-warning" role="alert">
+                        Recibirás un correo electronico de confirmación 
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-platzi">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- /MODAL -->
+
 
 
     <!-- Optional JavaScript -->
@@ -364,7 +421,7 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
-        <!-- script para tooltips  -->
+    <!-- script para tooltips  -->
     <script src="index.js"></script>
 </body>
 
